@@ -6,6 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //Ruteo
 import { AppRoutingModule } from './app-routing.module';
 
+//para usar los servicios - peticiones http
+import { HttpClientModule } from "@angular/common/http";
+
 //componente de error page
 import { ErroPageComponent } from './shared/erro-page/erro-page.component';
 
@@ -17,6 +20,7 @@ import { ErroPageComponent } from './shared/erro-page/erro-page.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
