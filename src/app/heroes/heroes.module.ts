@@ -22,6 +22,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ListadoComponent } from './pages/listado/listado.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
+import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 
 @NgModule({
   declarations: [
@@ -32,14 +33,14 @@ import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.
     BuscarComponent,
     HeroeTarjetaComponent,
     ImagenPipe,
+    ConfirmarComponent,
   ],
   imports: [
     CommonModule,
     FlexLayoutModule,
-     FormsModule,
+    FormsModule,
     MaterialModule,
-    HeroesRoutingModule,
-   
+    HeroesRoutingModule
   ]
 })
 export class HeroesModule { }

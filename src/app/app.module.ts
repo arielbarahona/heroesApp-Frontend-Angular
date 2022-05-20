@@ -12,6 +12,10 @@ import { HttpClientModule } from "@angular/common/http";
 //componente de error page
 import { ErroPageComponent } from './shared/erro-page/erro-page.component';
 
+//Paquete de alertas de terceros
+import { ToastrModule } from 'ngx-toastr';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +25,12 @@ import { ErroPageComponent } from './shared/erro-page/erro-page.component';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ToastrModule.forRoot({
+    timeOut: 5000,
+    positionClass: 'toast-bottom-right',
+    preventDuplicates: true,
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
